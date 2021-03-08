@@ -16,8 +16,7 @@ Tabnine Issue Changes AI uses state of the art deep learning models to predict w
 ## Files to change
 
 1. [`model/scrape_prs.py`](https://github.com/boaz-codota/predict-files-to-change2/blob/master/model/scrape_prs.py) 0.82%
-1. [`model/train_model.ipynb`](https://github.com/boaz-codota/predict-files-to-change2/blob/master/model/train_model.ipynb)
-   0.31%
+1. [`model/train_model.ipynb`](https://github.com/boaz-codota/predict-files-to-change2/blob/master/model/train_model.ipynb) 0.31%
 1. [`model/model_pr_files_to_change.bin`](https://github.com/boaz-codota/predict-files-to-change2/blob/master/model/model_pr_files_to_change.bin) 0.24%
 
 ---
