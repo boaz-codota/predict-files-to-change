@@ -1,5 +1,6 @@
 import * as core from "@actions/core";
 import { context, getOctokit } from "@actions/github";
+import fs from "fs";
 
 async function run() {
   try {
@@ -18,7 +19,7 @@ async function run() {
     client.issues.createComment({
       ...context.repo,
       issue_number: issue.issue_number,
-      body: "Kaki pipi `23`",
+      body: fs.readFileSync("./template.md", "utf8"),
     });
   } catch (error) {
     core.setFailed(error.message);
