@@ -19,7 +19,7 @@ async function run() {
     client.issues.createComment({
       ...context.repo,
       issue_number: issue.issue_number,
-      body: fs.readFileSync("./template.md", "utf8"),
+      body: fs.readFileSync(`${__dirname}/template.md`, "utf8"),
     });
   } catch (error) {
     core.setFailed(error.message);
