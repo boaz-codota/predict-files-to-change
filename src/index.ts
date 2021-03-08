@@ -4,6 +4,7 @@ import { context, getOctokit } from "@actions/github";
 async function run() {
   try {
     const token = core.getInput('github-token', {required: true})
+    
     // FIXME: DELETE ME
     core.info(`Received token with length: "${token.length}"`)
 
